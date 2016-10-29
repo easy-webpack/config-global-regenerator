@@ -1,8 +1,8 @@
-import {WebpackConfig, get} from '@easy-webpack/core'
+import {WebpackConfigWithMetadata, get} from '@easy-webpack/core'
 import * as webpack from 'webpack'
 
 export = function regenerator() {
-  return function regenerator(this: WebpackConfig): WebpackConfig {
+  return function regenerator(this: WebpackConfigWithMetadata): WebpackConfigWithMetadata {
     return {
       plugins: [
         new webpack.ProvidePlugin({
